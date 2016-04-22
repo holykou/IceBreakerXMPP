@@ -20,13 +20,25 @@
     [super viewDidLoad];
     self.chatView.delegate = self;
     self.chatView.dataSource = self;
+
+    [self.chatView setBounces:NO];
     if (!self.messages) {
         self.messages = [[NSMutableArray alloc ] init];
     }
+    self.messageField.delegate = self;
     AppDelegate *del = [self appDelegate];
     del._messageDelegate = self;
     [self.messageField becomeFirstResponder];
-    
+    // register for keyboard notifications
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillShow:)
+                                                 name:UIKeyboardWillShowNotification
+                                               object:self.view.window];
+    // register for keyboard notifications
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(keyboardWillHide:)
+                                                 name:UIKeyboardWillHideNotification
+                                               object:self.view.window];
 }
 
 - (void) setUser:(NSString *) userName {
@@ -174,5 +186,34 @@ static CGFloat padding = 20.0;
     
 }
 // react to the message received
+//- (void)textFieldDidBeginEditing:(UITextField *)textField {
+//    CGPoint scrollPoint = CGPointMake(0, 200);
+//    [self.scrollView setContentOffset:scrollPoint animated:YES];
+//}
+//
+//- (void)textFieldDidEndEditing:(UITextField *)textField {
+//    [self.scrollView setContentOffset:CGPointZero animated:YES];
+//}
+
+
+- (void)keyboardWillHide:(NSNotification *)n
+{
+    NSDictionary* userInfo = [n userInfo];
+    
+   [self.scrollView setContentOffset:CGPointZero animated:YES];
+    
+}
+- (void)keyboardWillShow:(NSNotification *)n
+{
+    // This is an ivar I'm using to ensure that we do not do the frame size adjustment on the `UIScrollView` if the keyboard is already shown.  This can happen if the user, after fixing editing a `UITextField`, scrolls the resized `UIScrollView` to another `UITextField` and attempts to edit the next `UITextField`.  If we were to resize the `UIScrollView` again, it would be disastrous.  NOTE: The keyboard notification will fire even when the keyboard is already shown.
+    
+    
+    NSDictionary* userInfo = [n userInfo];
+    
+    // get the size of the keyboard
+    CGSize keyboardSize = [[userInfo objectForKey:UIKeyboardFrameBeginUserInfoKey] CGRectValue].size;
+    CGPoint scrollPoint = CGPointMake(0, keyboardSize.height-40);
+    [self.scrollView setContentOffset:scrollPoint animated:YES];
+}
 
 @end

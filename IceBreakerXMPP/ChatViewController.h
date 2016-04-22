@@ -10,8 +10,9 @@
 #import "MessageDelegate.h"
 
 //This view controller manages the chat screen
-@interface ChatViewController : UIViewController <UITableViewDelegate,UITableViewDataSource, MessageDelegate>
+@interface ChatViewController : UIViewController <UITableViewDelegate,UITableViewDataSource, MessageDelegate, UITextFieldDelegate>
 
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (nonatomic,retain) IBOutlet UITextField *messageField;
 @property (nonatomic,retain) NSString *chatWithUser;
 @property (nonatomic,retain) NSMutableArray *messages;
