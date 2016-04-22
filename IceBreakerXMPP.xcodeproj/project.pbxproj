@@ -1,0 +1,594 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2F2D6D29F3184D99EC6963FB /* libPods-IceBreakerXMPPTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FA4C94367B5BDF5B7BCF3205 /* libPods-IceBreakerXMPPTests.a */; };
+		AC0FCA6D1CCAA63700B0781C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0FCA6C1CCAA63700B0781C /* main.m */; };
+		AC0FCA701CCAA63700B0781C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0FCA6F1CCAA63700B0781C /* AppDelegate.m */; };
+		AC0FCA731CCAA63700B0781C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0FCA721CCAA63700B0781C /* ViewController.m */; };
+		AC0FCA761CCAA63700B0781C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0FCA741CCAA63700B0781C /* Main.storyboard */; };
+		AC0FCA781CCAA63700B0781C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0FCA771CCAA63700B0781C /* Images.xcassets */; };
+		AC0FCA7B1CCAA63700B0781C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AC0FCA791CCAA63700B0781C /* LaunchScreen.xib */; };
+		AC0FCA871CCAA63700B0781C /* IceBreakerXMPPTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0FCA861CCAA63700B0781C /* IceBreakerXMPPTests.m */; };
+		AC0FCA991CCAA6E700B0781C /* ChatViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0FCA921CCAA6E700B0781C /* ChatViewController.m */; };
+		AC0FCA9A1CCAA6E700B0781C /* image2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AC0FCA931CCAA6E700B0781C /* image2.jpg */; };
+		AC0FCA9B1CCAA6E700B0781C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0FCA951CCAA6E700B0781C /* LoginViewController.m */; };
+		AC0FCA9C1CCAA6E700B0781C /* NSString+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0FCA981CCAA6E700B0781C /* NSString+Utils.m */; };
+		FC8B768CD05232CFF353F51E /* libPods-IceBreakerXMPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 242124B687538509266E8835 /* libPods-IceBreakerXMPP.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AC0FCA811CCAA63700B0781C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AC0FCA5F1CCAA63700B0781C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AC0FCA661CCAA63700B0781C;
+			remoteInfo = IceBreakerXMPP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07F0532EF91F392255D44D2F /* Pods-IceBreakerXMPPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IceBreakerXMPPTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IceBreakerXMPPTests/Pods-IceBreakerXMPPTests.release.xcconfig"; sourceTree = "<group>"; };
+		242124B687538509266E8835 /* libPods-IceBreakerXMPP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IceBreakerXMPP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		51DFFB3F759A5995D6AC52CA /* Pods-IceBreakerXMPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IceBreakerXMPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-IceBreakerXMPP/Pods-IceBreakerXMPP.release.xcconfig"; sourceTree = "<group>"; };
+		95FD8F81CFA75CBD100E75C3 /* Pods-IceBreakerXMPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IceBreakerXMPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IceBreakerXMPP/Pods-IceBreakerXMPP.debug.xcconfig"; sourceTree = "<group>"; };
+		A3FECE518EE6EB70DE1D751A /* Pods-IceBreakerXMPPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IceBreakerXMPPTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IceBreakerXMPPTests/Pods-IceBreakerXMPPTests.debug.xcconfig"; sourceTree = "<group>"; };
+		AC0FCA671CCAA63700B0781C /* IceBreakerXMPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IceBreakerXMPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0FCA6B1CCAA63700B0781C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0FCA6C1CCAA63700B0781C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AC0FCA6E1CCAA63700B0781C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AC0FCA6F1CCAA63700B0781C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AC0FCA711CCAA63700B0781C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AC0FCA721CCAA63700B0781C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AC0FCA751CCAA63700B0781C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AC0FCA771CCAA63700B0781C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AC0FCA7A1CCAA63700B0781C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		AC0FCA801CCAA63700B0781C /* IceBreakerXMPPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IceBreakerXMPPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC0FCA851CCAA63700B0781C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC0FCA861CCAA63700B0781C /* IceBreakerXMPPTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IceBreakerXMPPTests.m; sourceTree = "<group>"; };
+		AC0FCA901CCAA6E700B0781C /* ChatDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatDelegate.h; sourceTree = "<group>"; };
+		AC0FCA911CCAA6E700B0781C /* ChatViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChatViewController.h; sourceTree = "<group>"; };
+		AC0FCA921CCAA6E700B0781C /* ChatViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChatViewController.m; sourceTree = "<group>"; };
+		AC0FCA931CCAA6E700B0781C /* image2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = image2.jpg; sourceTree = "<group>"; };
+		AC0FCA941CCAA6E700B0781C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		AC0FCA951CCAA6E700B0781C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		AC0FCA961CCAA6E700B0781C /* MessageDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDelegate.h; sourceTree = "<group>"; };
+		AC0FCA971CCAA6E700B0781C /* NSString+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Utils.h"; sourceTree = "<group>"; };
+		AC0FCA981CCAA6E700B0781C /* NSString+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Utils.m"; sourceTree = "<group>"; };
+		FA4C94367B5BDF5B7BCF3205 /* libPods-IceBreakerXMPPTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IceBreakerXMPPTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AC0FCA641CCAA63700B0781C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FC8B768CD05232CFF353F51E /* libPods-IceBreakerXMPP.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0FCA7D1CCAA63700B0781C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F2D6D29F3184D99EC6963FB /* libPods-IceBreakerXMPPTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AC0FCA5E1CCAA63700B0781C = {
+			isa = PBXGroup;
+			children = (
+				AC0FCA691CCAA63700B0781C /* IceBreakerXMPP */,
+				AC0FCA831CCAA63700B0781C /* IceBreakerXMPPTests */,
+				AC0FCA681CCAA63700B0781C /* Products */,
+				C72DE29EDB5D798E3B3B0DC3 /* Pods */,
+				E84B13A53F3546081984D0B3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AC0FCA681CCAA63700B0781C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC0FCA671CCAA63700B0781C /* IceBreakerXMPP.app */,
+				AC0FCA801CCAA63700B0781C /* IceBreakerXMPPTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AC0FCA691CCAA63700B0781C /* IceBreakerXMPP */ = {
+			isa = PBXGroup;
+			children = (
+				AC0FCA901CCAA6E700B0781C /* ChatDelegate.h */,
+				AC0FCA911CCAA6E700B0781C /* ChatViewController.h */,
+				AC0FCA921CCAA6E700B0781C /* ChatViewController.m */,
+				AC0FCA931CCAA6E700B0781C /* image2.jpg */,
+				AC0FCA941CCAA6E700B0781C /* LoginViewController.h */,
+				AC0FCA951CCAA6E700B0781C /* LoginViewController.m */,
+				AC0FCA961CCAA6E700B0781C /* MessageDelegate.h */,
+				AC0FCA971CCAA6E700B0781C /* NSString+Utils.h */,
+				AC0FCA981CCAA6E700B0781C /* NSString+Utils.m */,
+				AC0FCA6E1CCAA63700B0781C /* AppDelegate.h */,
+				AC0FCA6F1CCAA63700B0781C /* AppDelegate.m */,
+				AC0FCA711CCAA63700B0781C /* ViewController.h */,
+				AC0FCA721CCAA63700B0781C /* ViewController.m */,
+				AC0FCA741CCAA63700B0781C /* Main.storyboard */,
+				AC0FCA771CCAA63700B0781C /* Images.xcassets */,
+				AC0FCA791CCAA63700B0781C /* LaunchScreen.xib */,
+				AC0FCA6A1CCAA63700B0781C /* Supporting Files */,
+			);
+			path = IceBreakerXMPP;
+			sourceTree = "<group>";
+		};
+		AC0FCA6A1CCAA63700B0781C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC0FCA6B1CCAA63700B0781C /* Info.plist */,
+				AC0FCA6C1CCAA63700B0781C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC0FCA831CCAA63700B0781C /* IceBreakerXMPPTests */ = {
+			isa = PBXGroup;
+			children = (
+				AC0FCA861CCAA63700B0781C /* IceBreakerXMPPTests.m */,
+				AC0FCA841CCAA63700B0781C /* Supporting Files */,
+			);
+			path = IceBreakerXMPPTests;
+			sourceTree = "<group>";
+		};
+		AC0FCA841CCAA63700B0781C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AC0FCA851CCAA63700B0781C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C72DE29EDB5D798E3B3B0DC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95FD8F81CFA75CBD100E75C3 /* Pods-IceBreakerXMPP.debug.xcconfig */,
+				51DFFB3F759A5995D6AC52CA /* Pods-IceBreakerXMPP.release.xcconfig */,
+				A3FECE518EE6EB70DE1D751A /* Pods-IceBreakerXMPPTests.debug.xcconfig */,
+				07F0532EF91F392255D44D2F /* Pods-IceBreakerXMPPTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E84B13A53F3546081984D0B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				242124B687538509266E8835 /* libPods-IceBreakerXMPP.a */,
+				FA4C94367B5BDF5B7BCF3205 /* libPods-IceBreakerXMPPTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AC0FCA661CCAA63700B0781C /* IceBreakerXMPP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC0FCA8A1CCAA63700B0781C /* Build configuration list for PBXNativeTarget "IceBreakerXMPP" */;
+			buildPhases = (
+				CC884E5C11FFFB87F911EC56 /* 📦 Check Pods Manifest.lock */,
+				AC0FCA631CCAA63700B0781C /* Sources */,
+				AC0FCA641CCAA63700B0781C /* Frameworks */,
+				AC0FCA651CCAA63700B0781C /* Resources */,
+				D244F3F0F47A951CFD8DF596 /* 📦 Embed Pods Frameworks */,
+				51E19FC8671620A77BEB0979 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IceBreakerXMPP;
+			productName = IceBreakerXMPP;
+			productReference = AC0FCA671CCAA63700B0781C /* IceBreakerXMPP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AC0FCA7F1CCAA63700B0781C /* IceBreakerXMPPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AC0FCA8D1CCAA63700B0781C /* Build configuration list for PBXNativeTarget "IceBreakerXMPPTests" */;
+			buildPhases = (
+				E7216B29ABBD65B1D9C0678A /* 📦 Check Pods Manifest.lock */,
+				AC0FCA7C1CCAA63700B0781C /* Sources */,
+				AC0FCA7D1CCAA63700B0781C /* Frameworks */,
+				AC0FCA7E1CCAA63700B0781C /* Resources */,
+				B0555FB0C2B80D65BC1B12B6 /* 📦 Embed Pods Frameworks */,
+				07D695D5B66F4F2A48D81C0A /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AC0FCA821CCAA63700B0781C /* PBXTargetDependency */,
+			);
+			name = IceBreakerXMPPTests;
+			productName = IceBreakerXMPPTests;
+			productReference = AC0FCA801CCAA63700B0781C /* IceBreakerXMPPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AC0FCA5F1CCAA63700B0781C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = "Koushik Ravikumar";
+				TargetAttributes = {
+					AC0FCA661CCAA63700B0781C = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					AC0FCA7F1CCAA63700B0781C = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = AC0FCA661CCAA63700B0781C;
+					};
+				};
+			};
+			buildConfigurationList = AC0FCA621CCAA63700B0781C /* Build configuration list for PBXProject "IceBreakerXMPP" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AC0FCA5E1CCAA63700B0781C;
+			productRefGroup = AC0FCA681CCAA63700B0781C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AC0FCA661CCAA63700B0781C /* IceBreakerXMPP */,
+				AC0FCA7F1CCAA63700B0781C /* IceBreakerXMPPTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AC0FCA651CCAA63700B0781C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0FCA761CCAA63700B0781C /* Main.storyboard in Resources */,
+				AC0FCA7B1CCAA63700B0781C /* LaunchScreen.xib in Resources */,
+				AC0FCA9A1CCAA6E700B0781C /* image2.jpg in Resources */,
+				AC0FCA781CCAA63700B0781C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0FCA7E1CCAA63700B0781C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07D695D5B66F4F2A48D81C0A /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IceBreakerXMPPTests/Pods-IceBreakerXMPPTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		51E19FC8671620A77BEB0979 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IceBreakerXMPP/Pods-IceBreakerXMPP-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0555FB0C2B80D65BC1B12B6 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IceBreakerXMPPTests/Pods-IceBreakerXMPPTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC884E5C11FFFB87F911EC56 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D244F3F0F47A951CFD8DF596 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IceBreakerXMPP/Pods-IceBreakerXMPP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E7216B29ABBD65B1D9C0678A /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AC0FCA631CCAA63700B0781C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0FCA731CCAA63700B0781C /* ViewController.m in Sources */,
+				AC0FCA9C1CCAA6E700B0781C /* NSString+Utils.m in Sources */,
+				AC0FCA701CCAA63700B0781C /* AppDelegate.m in Sources */,
+				AC0FCA991CCAA6E700B0781C /* ChatViewController.m in Sources */,
+				AC0FCA6D1CCAA63700B0781C /* main.m in Sources */,
+				AC0FCA9B1CCAA6E700B0781C /* LoginViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC0FCA7C1CCAA63700B0781C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AC0FCA871CCAA63700B0781C /* IceBreakerXMPPTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AC0FCA821CCAA63700B0781C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AC0FCA661CCAA63700B0781C /* IceBreakerXMPP */;
+			targetProxy = AC0FCA811CCAA63700B0781C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AC0FCA741CCAA63700B0781C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC0FCA751CCAA63700B0781C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AC0FCA791CCAA63700B0781C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AC0FCA7A1CCAA63700B0781C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AC0FCA881CCAA63700B0781C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AC0FCA891CCAA63700B0781C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AC0FCA8B1CCAA63700B0781C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95FD8F81CFA75CBD100E75C3 /* Pods-IceBreakerXMPP.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IceBreakerXMPP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AC0FCA8C1CCAA63700B0781C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51DFFB3F759A5995D6AC52CA /* Pods-IceBreakerXMPP.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = IceBreakerXMPP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AC0FCA8E1CCAA63700B0781C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3FECE518EE6EB70DE1D751A /* Pods-IceBreakerXMPPTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IceBreakerXMPPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IceBreakerXMPP.app/IceBreakerXMPP";
+			};
+			name = Debug;
+		};
+		AC0FCA8F1CCAA63700B0781C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07F0532EF91F392255D44D2F /* Pods-IceBreakerXMPPTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = IceBreakerXMPPTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IceBreakerXMPP.app/IceBreakerXMPP";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AC0FCA621CCAA63700B0781C /* Build configuration list for PBXProject "IceBreakerXMPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0FCA881CCAA63700B0781C /* Debug */,
+				AC0FCA891CCAA63700B0781C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC0FCA8A1CCAA63700B0781C /* Build configuration list for PBXNativeTarget "IceBreakerXMPP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0FCA8B1CCAA63700B0781C /* Debug */,
+				AC0FCA8C1CCAA63700B0781C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AC0FCA8D1CCAA63700B0781C /* Build configuration list for PBXNativeTarget "IceBreakerXMPPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC0FCA8E1CCAA63700B0781C /* Debug */,
+				AC0FCA8F1CCAA63700B0781C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AC0FCA5F1CCAA63700B0781C /* Project object */;
+}
