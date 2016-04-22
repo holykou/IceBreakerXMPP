@@ -30,6 +30,7 @@
     AppDelegate *delegate = (AppDelegate *)[[UIApplication sharedApplication]delegate] ;
     delegate.loginView = self;
     [self.view addSubview:backgroundImage];
+    //If the user had already logged in, log in automatically
     if ([[NSUserDefaults standardUserDefaults] objectForKey:@"userID"]&&[[NSUserDefaults standardUserDefaults] objectForKey:@"userPassword"]) {
         self.loginButton.hidden = YES;
         self.enteredUsername.text = [[NSUserDefaults standardUserDefaults] objectForKey:@"userID"];
@@ -42,7 +43,7 @@
     }
     
 }
-
+//Action when login is tapped
 - (IBAction) login {
     
     [[NSUserDefaults standardUserDefaults] setObject:self.enteredUsername.text forKey:@"userID"];
@@ -66,11 +67,8 @@
         delegate.loginView = self;
     }
 }
--(void)connected
-{
-    self.activityLabel.text = @"Connected!";
-    self.activityLabel.text = @"Authenticating...";
-}
+
+//Once the user credentials are authenticated, transition to the next view
 -(void)authenticated
 {
     self.activityLabel.text = @"";

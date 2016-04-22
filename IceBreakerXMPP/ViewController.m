@@ -30,6 +30,8 @@
     appDelegate.viewController = self;
     
 }
+
+//methods to ensure Presence of users are reflected
 -(void)newBuddyOnline:(NSString *)buddyName
 {
     [onlineBuddies addObject:buddyName];
@@ -42,6 +44,7 @@
     [self.buddyView reloadData];
 }
 
+//Action when user logs out
 - (void) showLogin {
     [[(AppDelegate *)[self appDelegate] xmppStream] disconnect];
     [[NSUserDefaults standardUserDefaults] setObject:nil forKey:@"userID"];
@@ -52,14 +55,6 @@
     }];
 }
 
-//-(void)pendingMessages:(NSMutableDictionary *)message
-//{
-//    if (!self.pendingMessages) {
-//        self.pendingMessages = [NSMutableArray new];
-//    }
-//    [self.pendingMessages addObject:message];
-//    [self.buddyView reloadData];
-//}
 - (AppDelegate *)appDelegate {
     return (AppDelegate *)[[UIApplication sharedApplication] delegate];
 }

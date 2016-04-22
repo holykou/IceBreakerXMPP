@@ -106,19 +106,10 @@
 		AC0FCA691CCAA63700B0781C /* IceBreakerXMPP */ = {
 			isa = PBXGroup;
 			children = (
-				AC0FCA901CCAA6E700B0781C /* ChatDelegate.h */,
-				AC0FCA911CCAA6E700B0781C /* ChatViewController.h */,
-				AC0FCA921CCAA6E700B0781C /* ChatViewController.m */,
+				AC0FCA9E1CCAA97A00B0781C /* Core classes */,
 				AC0FCA931CCAA6E700B0781C /* image2.jpg */,
-				AC0FCA941CCAA6E700B0781C /* LoginViewController.h */,
-				AC0FCA951CCAA6E700B0781C /* LoginViewController.m */,
-				AC0FCA961CCAA6E700B0781C /* MessageDelegate.h */,
-				AC0FCA971CCAA6E700B0781C /* NSString+Utils.h */,
-				AC0FCA981CCAA6E700B0781C /* NSString+Utils.m */,
 				AC0FCA6E1CCAA63700B0781C /* AppDelegate.h */,
 				AC0FCA6F1CCAA63700B0781C /* AppDelegate.m */,
-				AC0FCA711CCAA63700B0781C /* ViewController.h */,
-				AC0FCA721CCAA63700B0781C /* ViewController.m */,
 				AC0FCA741CCAA63700B0781C /* Main.storyboard */,
 				AC0FCA771CCAA63700B0781C /* Images.xcassets */,
 				AC0FCA791CCAA63700B0781C /* LaunchScreen.xib */,
@@ -151,6 +142,23 @@
 				AC0FCA851CCAA63700B0781C /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AC0FCA9E1CCAA97A00B0781C /* Core classes */ = {
+			isa = PBXGroup;
+			children = (
+				AC0FCA901CCAA6E700B0781C /* ChatDelegate.h */,
+				AC0FCA911CCAA6E700B0781C /* ChatViewController.h */,
+				AC0FCA921CCAA6E700B0781C /* ChatViewController.m */,
+				AC0FCA941CCAA6E700B0781C /* LoginViewController.h */,
+				AC0FCA951CCAA6E700B0781C /* LoginViewController.m */,
+				AC0FCA961CCAA6E700B0781C /* MessageDelegate.h */,
+				AC0FCA971CCAA6E700B0781C /* NSString+Utils.h */,
+				AC0FCA981CCAA6E700B0781C /* NSString+Utils.m */,
+				AC0FCA711CCAA63700B0781C /* ViewController.h */,
+				AC0FCA721CCAA63700B0781C /* ViewController.m */,
+			);
+			name = "Core classes";
 			sourceTree = "<group>";
 		};
 		C72DE29EDB5D798E3B3B0DC3 /* Pods */ = {

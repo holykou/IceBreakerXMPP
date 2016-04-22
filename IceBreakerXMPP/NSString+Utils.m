@@ -10,7 +10,7 @@
 
 
 @implementation NSString (Utils)
-
+//Category method to simplify getting current time in the desired format
 + (NSString *) getCurrentTime {
 
 	NSDate *nowUTC = [NSDate date];

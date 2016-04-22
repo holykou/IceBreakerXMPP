@@ -19,6 +19,7 @@
 @implementation AppDelegate
 @synthesize _chatDelegate,_messageDelegate;
 
+//Setting up initial XMPP stream
 -(void)setupStream
 {
     self.xmppStream = [[XMPPStream alloc] init];
@@ -27,6 +28,7 @@
     [self.xmppStream setHostPort:5222];
 }
 
+//Switch presence between online and offline
 -(void)goOnline
 {
     XMPPPresence *presence = [XMPPPresence presence];
@@ -39,7 +41,7 @@
     [[self xmppStream] sendElement:presence];
 }
 
-
+//Initial method to connect to the server
 - (BOOL)connect {
     
     [self setupStream];
@@ -82,6 +84,7 @@
 }
 #pragma mark XMPP delegates
 
+//called when the connection is successfull
 - (void)xmppStreamDidConnect:(XMPPStream *)sender {
     
     self.isOpen = YES;
@@ -95,7 +98,7 @@
     [[self xmppStream] authenticateWithPassword:_password error:&error];
     
 }
-
+//called when authentication is successful
 - (void)xmppStreamDidAuthenticate:(XMPPStream *)sender {
     
     [self goOnline];
@@ -111,6 +114,7 @@
     
 }
 
+//called when message is sent from a user
 - (void)xmppStream:(XMPPStream *)sender didReceiveMessage:(XMPPMessage *)message {
     
     
@@ -132,6 +136,8 @@
     }
     
 }
+
+//called when authentication fails
 -(void)xmppStream:(XMPPStream *)sender didNotAuthenticate:(DDXMLElement *)error
 {
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Invalid Credentials!"
@@ -147,6 +153,8 @@
     });
     
 }
+
+//called when buddies are online and their presence is transmitted
 - (void)xmppStream:(XMPPStream *)sender didReceivePresence:(XMPPPresence *)presence {
     
     NSString *presenceType = [presence type]; // online/offline

@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "MessageDelegate.h"
+
+//This view controller manages the chat screen
 @interface ChatViewController : UIViewController <UITableViewDelegate,UITableViewDataSource, MessageDelegate>
 
 @property (nonatomic,retain) IBOutlet UITextField *messageField;

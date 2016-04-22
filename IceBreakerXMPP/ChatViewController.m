@@ -50,7 +50,7 @@
     }];
     
 }
-
+//Method to send a message to a user using the xmpp protocol
 - (IBAction)sendMessage {
     
     NSString *messageString = self.messageField.text;
@@ -78,7 +78,7 @@
     }
     
 }
-
+//method to handle receiving of messages
 - (void)newMessageReceived:(NSMutableDictionary *)messageContent {
     
     NSString *m = [messageContent objectForKey:@"msg"];
@@ -108,7 +108,7 @@
     if (cell == nil) {
           cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue2 reuseIdentifier:cellIdentifier];
     }
-    
+    //formatting the texts sent and received based on sender
     cell.textLabel.text = [senderDictionary objectForKey:@"msg"];
     cell.detailTextLabel.text = [NSString stringWithFormat:@"%@ (%@)",[senderDictionary objectForKey:@"sender"],[senderDictionary objectForKey:@"time"]];
     cell.detailTextLabel.numberOfLines = 0;
@@ -155,6 +155,7 @@
 }
 #pragma mark -
 #pragma mark Chat delegates
+//To ensure word wrapping of long texts and creating a dynamic table view cell
 static CGFloat padding = 20.0;
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     

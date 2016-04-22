@@ -6,6 +6,9 @@
 //
 //
 
+
+//A protocol to ensure buddy list stays updated
+
 #import <Foundation/Foundation.h>
 
 @protocol ChatDelegate <NSObject>

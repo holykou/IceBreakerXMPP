@@ -18,5 +18,5 @@
 -(void)authenticated;
 @property (weak, nonatomic) IBOutlet UILabel *activityLabel;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *activityIndicator;
--(void)connected;
+
 @end

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A6D11E89-2E5F-4867-A3ED-3A1BD5B725C8</string>
+	<key>IDESourceControlProjectName</key>
+	<string>IceBreakerXMPP</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7D4910A872493DA078B44C9505B64727723BF985</key>
+		<string>https://github.com/holykou/IceBreakerXMPP.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>IceBreakerXMPP.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7D4910A872493DA078B44C9505B64727723BF985</key>
+		<string>..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/holykou/IceBreakerXMPP.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7D4910A872493DA078B44C9505B64727723BF985</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7D4910A872493DA078B44C9505B64727723BF985</string>
+			<key>IDESourceControlWCCName</key>
+			<string>IceBreakerXMPP</string>
+		</dict>
+	</array>
+</dict>
+</plist>
